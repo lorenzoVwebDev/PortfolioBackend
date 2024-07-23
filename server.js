@@ -75,3 +75,5 @@ mongoose.connection.on('open', () => {
 
 //curl ifconfig.co
 
+//curl ipinfo.io/ip
+
