@@ -57,5 +57,11 @@ const tictactoeJS = (req, res) => {
   res.sendFile(path.join(__dirname, '../', 'projects', 'tic-tac-toe', 'tic-tac-toe.js'));
 }
 
+//todolist
 
-module.exports = { getCalculatorHTML, getCalculatorCSS, getCalculatorJS, getRockPaperScissorHTML, getRockPaperScissorCSS, getRockPaperScissorJS, tictactoeHTML, tictactoeCSS, tictactoeJS };
+const todolisthtml = (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'projects', 'ToDoList', 'index.html'));
+}
+
+
+module.exports = { getCalculatorHTML, getCalculatorCSS, getCalculatorJS, getRockPaperScissorHTML, getRockPaperScissorCSS, getRockPaperScissorJS, tictactoeHTML, tictactoeCSS, tictactoeJS, todolisthtml };

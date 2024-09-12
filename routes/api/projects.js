@@ -44,6 +44,10 @@ router.route('/tictactoecss')
 router.route('/tictactoejs')
 .get(projects.tictactoeJS);
 
+//to do list
+
+router.route('/todolist')
+.get(projects.todolisthtml)
 
 
 
