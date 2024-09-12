@@ -60,7 +60,7 @@ const tictactoeJS = (req, res) => {
 //todolist
 
 const todolisthtml = (req, res) => {
-  res.sendFile(path.join(__dirname, '../', 'projects', 'ToDoList', 'index.html'));
+  res.sendFile(path.join(__dirname, '../projects/ToDoList/build/index.html'));
 }
 
 
