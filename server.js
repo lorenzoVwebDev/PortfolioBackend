@@ -24,7 +24,7 @@ const PORT = process.env.PORT || 3000;
 
 
 //connect to MongoDB
-
+ 
 connectDB();
  
 // custom middleware logger

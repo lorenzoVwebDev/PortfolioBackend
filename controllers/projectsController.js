@@ -63,5 +63,12 @@ const todolisthtml = (req, res) => {
   res.sendFile(path.join(__dirname, '../projects/ToDoList/build/index.html'));
 }
 
+const todolistcss = (req, res) => {
+  res.sendFile(path.join(__dirname, '../projects/ToDoList/static/css/main.5902730d.css'));
+}
 
-module.exports = { getCalculatorHTML, getCalculatorCSS, getCalculatorJS, getRockPaperScissorHTML, getRockPaperScissorCSS, getRockPaperScissorJS, tictactoeHTML, tictactoeCSS, tictactoeJS, todolisthtml };
+const todolistjs = (req, res) => {
+  res.sendFile(path.join(__dirname, '../projects/ToDoList/static/js/main.70d39762.js'));
+}
+
+module.exports = { getCalculatorHTML, getCalculatorCSS, getCalculatorJS, getRockPaperScissorHTML, getRockPaperScissorCSS, getRockPaperScissorJS, tictactoeHTML, tictactoeCSS, tictactoeJS, todolisthtml, todolistjs, todolistcss  };

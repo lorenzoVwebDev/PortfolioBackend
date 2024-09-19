@@ -49,6 +49,12 @@ router.route('/tictactoejs')
 router.route('/todolist')
 .get(projects.todolisthtml)
 
+router.route('/todolistjs')
+.get(projects.todolistjs)
+
+router.route('/todolistcss')
+.get(projects.todolistcss)
+
 
 
 module.exports = router;
