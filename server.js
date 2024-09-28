@@ -7,8 +7,10 @@ const cors = require('cors');
 const corsOptions = require('./config/corsOptions');
 const { logger } = require('./middleware/logEvents');
 const mongoose = require('mongoose');
+//utils
 const connectDB = require('./config/dbconfig'); 
 const errorHandler = require('./middleware/errorHandler');
+const { staticMiddlewares } = require('./middleware/staticFileGiver.js')
 const https = require('https');
 const hostname = 'lorenzo-viganego.com'
 const PORT = process.env.PORT || 3000;
@@ -25,7 +27,7 @@ const PORT = process.env.PORT || 3000;
 
 //connect to MongoDB
  
-connectDB();
+connectDB(); 
  
 // custom middleware logger
 app.use(logger); 
@@ -39,21 +41,24 @@ app.use(express.urlencoded({ extended: false }));
 // built-in middleware for json 
 app.use(express.json());
 
-//serve static files
-app.use('/', express.static(path.join(__dirname, '/public')));
-//projects static files
-//rock paper scissor
-app.use('/projects', express.static(path.join(__dirname, '/projects')));
-//templates & resume
-app.use('/templatesresume', express.static(path.join(__dirname, '/excel&powerpointfiles')));
+// serve static files
+app.use('/', express.static(path.join(__dirname, 'public')));
+//projects middlware
+app.use('/projects/sendcalculator/', express.static(path.join(__dirname, 'projects', 'Calculator')));
+app.use('/projects/tictactoehtml/', express.static(path.join(__dirname, 'projects', 'tic-tac-toe')));
+app.use('/projects/rockpaperscissorhtml/', express.static(path.join(__dirname, 'projects', 'rock-paper-scissor')));
+app.use('/projects/todolist/', express.static(path.join(__dirname, 'projects', 'ToDoList')));
+
+//projects middlware
+
 
 // routes
-app.use('/', require('./routes/root'));
+/* app.use('/', require('./routes/root'));
 app.use('/register', require('./routes/register'));
 app.use('/auth', require('./routes/auth'));
 app.use('/contacts', require('./routes/api/contacts'));
 app.use('/projects', require('./routes/api/projects'))
-app.use('/templatesresume', require('./routes/api/resumetemplates'))
+app.use('/templatesresume', require('./routes/api/resumetemplates')) */
   
 app.all('*', (req, res) => {
     res.status(404);
