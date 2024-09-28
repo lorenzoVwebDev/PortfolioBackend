@@ -53,12 +53,11 @@ app.use('/projects/todolist/', express.static(path.join(__dirname, 'projects', '
 
 
 // routes
-/* app.use('/', require('./routes/root'));
+
 app.use('/register', require('./routes/register'));
 app.use('/auth', require('./routes/auth'));
 app.use('/contacts', require('./routes/api/contacts'));
-app.use('/projects', require('./routes/api/projects'))
-app.use('/templatesresume', require('./routes/api/resumetemplates')) */
+app.use('/templatesresume', require('./routes/api/resumetemplates')) 
   
 app.all('*', (req, res) => {
     res.status(404);
