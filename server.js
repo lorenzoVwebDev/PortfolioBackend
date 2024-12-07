@@ -48,15 +48,6 @@ app.use('/projects/sendcalculator/', express.static(path.join(__dirname, 'projec
 app.use('/projects/tictactoehtml/', express.static(path.join(__dirname, 'projects', 'tic-tac-toe')));
 app.use('/projects/rockpaperscissorhtml/', express.static(path.join(__dirname, 'projects', 'rock-paper-scissor')));
 app.use('/projects/todolist/', express.static(path.join(__dirname, 'projects', 'ToDoList')));
-app.use('/projects/dogcreationengine/', express.static(path.join(__dirname, 'projects', 'dogCreationEngine')));
-//custom served file
-app.get('/projects/dogcreationengine/', (req, res) => {
-    // Path to the custom index.html you want to serve
-    const customIndexPath = path.join(__dirname, 'projects', 'dogCreationEngine', 'interface-tier', 'lab.html');
-    
-    // Send the custom index.html file
-    res.sendFile(customIndexPath);
-});
 //projects middlware
 
 
