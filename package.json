@@ -7,8 +7,8 @@
     "start": "node server",
     "dev": "nodemon server"
   },
-  "author": "Dave Gray",
-  "license": "ISC",
+  "author": "Lorenzo Viganego",
+  "license": "private",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
@@ -22,6 +22,6 @@
     "nodemon": "^2.0.22"
   },
   "engines": {
-    "node": "14.x"
+    "node": "22.12.0"
   }
 }
