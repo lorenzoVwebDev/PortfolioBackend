@@ -32,10 +32,6 @@ connectDB();
 // custom middleware logger
 app.use(logger); 
 
-
-app.options('*', cors(corsOptions));  // This will explicitly handle OPTIONS preflight requests
-
-
 // Cross Origin Resource Sharing
 app.use(cors(corsOptions));
 
