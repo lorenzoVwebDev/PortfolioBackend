@@ -1,6 +1,6 @@
 const whitelist = [
     'http://127.0.0.1:5500',
-    'http://localhost:3500', 'https://lorenzovwebdev.github.io', 'https://lorenzo-viganego.com'
+    'http://localhost:3500', 'https://lorenzovwebdev.github.io', 'https://lorenzo-viganego.com', 'https://www.lorenzo-viganego.com'
 ];
 
 const corsOptions = {
