@@ -4,7 +4,7 @@ const fs = require('fs');
 const app = express();
 const path = require('path');
 const cors = require('cors');
-const corsOptions = require('./config/corsOptions.js');
+/* const corsOptions = require('./config/corsOptions.js'); */
 const { logger } = require('./middleware/logEvents');
 const mongoose = require('mongoose');
 //utils
@@ -33,6 +33,21 @@ connectDB();
 app.use(logger);  */
 
 // Cross Origin Resource Sharing
+const whitelist = [
+    'https://www.lorenzo-viganego.com/', 
+    'https://lorenzo-viganego.com/'
+];
+
+const corsOptions = {
+    origin: function (origin, callback) {
+        if (whitelist.indexOf(origin) !== -1) {
+            callback(null, true)
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    }
+}
+
 app.use(cors(corsOptions));
 
 // built-in middleware to handle urlencoded form data
