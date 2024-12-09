@@ -4,7 +4,7 @@ const fs = require('fs');
 const app = express();
 const path = require('path');
 const cors = require('cors');
-const corsOptions = require('./config/corsOptions');
+const corsOptions = require('./config/corsOptions.js');
 const { logger } = require('./middleware/logEvents');
 const mongoose = require('mongoose');
 //utils
