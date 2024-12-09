@@ -1,11 +1,10 @@
 const whitelist = [
     'https://www.lorenzo-viganego.com/', 
-    'https://lorenzo-viganego.com/'
+    'https://lorenzo-viganego.com/', 'http://example.com'
 ];
 
 const corsOptions = {
     origin: (origin, callback) => {
-        console.log(origin);
         if (!origin || whitelist.indexOf(origin) !== -1) {
             callback(null, true)
         } else {
