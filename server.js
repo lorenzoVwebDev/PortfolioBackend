@@ -29,8 +29,8 @@ const PORT = process.env.PORT || 3000;
  
 connectDB(); 
  
-// custom middleware logger
-app.use(logger); 
+/* // custom middleware logger
+app.use(logger);  */
 
 // Cross Origin Resource Sharing
 app.use(cors(corsOptions));
