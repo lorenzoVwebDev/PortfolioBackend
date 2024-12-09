@@ -28,7 +28,6 @@ const PORT = process.env.PORT || 3000;
 //connect to MongoDB
  
 connectDB(); 
- 
 /* // custom middleware logger
 app.use(logger);  */
 
@@ -39,7 +38,9 @@ const whitelist = [
 ];
 
 const corsOptions = {
+    
     origin: function (origin, callback) {
+        console.log(origin)
         if (whitelist.indexOf(origin) !== -1) {
             callback(null, true)
         } else {
