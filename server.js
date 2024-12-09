@@ -13,7 +13,7 @@ const errorHandler = require('./middleware/errorHandler');
 const { staticMiddlewares } = require('./middleware/staticFileGiver.js')
 const https = require('https');
 const hostname = 'lorenzo-viganego.com'
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000 || 3001;
 
 //https
 /* const httpsOptions = {
