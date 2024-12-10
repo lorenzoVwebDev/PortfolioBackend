@@ -32,12 +32,12 @@ connectDB();
 app.use(logger);  */
 
 // Cross Origin Resource Sharing
-
+app.use((req, res) => {
+    console.log(req.origin)
+})
 app.use(cors(corsOptions));
 
-app.use((req, res) => {
-    console.log(req)
-})
+
 
 // built-in middleware to handle urlencoded form data
 app.use(express.urlencoded({ extended: false }));
