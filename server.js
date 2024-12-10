@@ -35,6 +35,10 @@ app.use(logger);  */
 
 app.use(cors(corsOptions));
 
+app.use((req, res) => {
+    console.log(req)
+})
+
 // built-in middleware to handle urlencoded form data
 app.use(express.urlencoded({ extended: false }));
 
