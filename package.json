@@ -16,12 +16,13 @@
     "express": "^4.19.2",
     "mongodb": "4.4.0",
     "mongoose": "5.11.15",
+    "pm2": "^5.4.3",
     "uuid": "^10.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
   },
-"engines": {
-  "node": ">=14.0.0 <23.0.0"
-}
+  "engines": {
+    "node": ">=14.0.0 <23.0.0"
+  }
 }
