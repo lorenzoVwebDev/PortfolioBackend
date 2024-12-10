@@ -34,7 +34,7 @@ app.use(logger);  */
     console.log(req.origin)
 }) */
 app.use((req,res,next)=> {
-    console.log(req.remoteAddress)
+    console.log(req)
     next();
 })
 app.use(cors(corsOptions));
