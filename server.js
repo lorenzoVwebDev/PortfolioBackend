@@ -1,4 +1,4 @@
-require('dotenv').config();
+/* require('dotenv').config();
 const express = require('express');
 const fs = require('fs');
 const app = express();
@@ -10,9 +10,16 @@ const mongoose = require('mongoose');
 //utils
 const connectDB = require('./config/dbconfig'); 
 const errorHandler = require('./middleware/errorHandler');
-const { staticMiddlewares } = require('./middleware/staticFileGiver.js')
-const https = require('https');
-const hostname = 'lorenzo-viganego.com'
+const PORT = process.env.PORT || 3000; */
+require('dotenv').config();
+const express = require('express');
+const fs = require('fs');
+const path = require('path');
+const cors = require('cors');
+const corsOptions = require('./config/corsOptions');
+const mongoose = require('mongoose');
+const connectDB = require('./config/dbconfig'); 
+const errorHandler = require('./middleware/errorHandler');
 const PORT = process.env.PORT || 3000;
 
 //https
