@@ -4,14 +4,13 @@ const fs = require('fs');
 const app = express();
 const path = require('path');
 const cors = require('cors');
-/* const corsOptions = require('./config/corsOptions.js'); */
+const {checkIp, corsOptions } = require('./config/corsOptions.js');
 const { logger } = require('./middleware/logEvents');
 const mongoose = require('mongoose');
 //utils
 const connectDB = require('./config/dbconfig'); 
 const errorHandler = require('./middleware/errorHandler');
 const PORT = process.env.PORT || 3000;
-
 
 //https
 /* const httpsOptions = {
@@ -34,35 +33,11 @@ app.use(logger);  */
     console.log(req.origin)
 }) */
 app.use((req,res,next)=> {
-    const ip = req.ip;
-    console.log(ip);
-    frontend = false;
-    const whitelist = [
-        'https://www.lorenzo-viganego.com', 
-        'https://lorenzo-viganego.com', 'http://example.com', 'http://192.168.1.101', 'http://192.168.1.1'/* , 'http://151.27.29.178'  */
-    ];
-
-    for(I=0;I<=whitelist.length-1;I++) {
-        if (whitelist[I].includes(ip)) {
-            frontend  = true;
-            break;
-        }
-    }
-    
-    const corsOptions = {
-        origin: (origin, callback) => {
-            if (frontend) {
-                callback(null, true)
-            } else {
-                callback(new Error('Not allowed by CORS'));
-            }
-        },
-    
-        optionsSuccessStatus: 200
-    }
-    app.use(cors(corsOptions));
+    checkIp(req.ip);
     next();
 })
+
+app.use(cors(corsOptions));
 
 
 
