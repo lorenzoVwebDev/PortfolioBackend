@@ -1,6 +1,6 @@
 const whitelist = [
     'https://www.lorenzo-viganego.com', 
-    'https://lorenzo-viganego.com', 'http://example.com', 'http://192.168.1.101', 'http://192.168.1.1', 'http://151.27.29.178', '172.232.217.98'
+    'https://lorenzo-viganego.com', 'http://example.com', 'http://192.168.1.101', 'http://192.168.1.1', 'http://151.27.29.178', '172.232.217.98', '185.199.108.153', '185.199.109.153', '185.199.110.153', '185.199.111.153'
 ];
 
 let frontend = false;
