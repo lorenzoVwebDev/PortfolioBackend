@@ -35,6 +35,7 @@ app.use(logger);  */
 }) */
 app.use((req,res,next)=> {
     const ip = req.ip;
+    console.log(ip);
     frontend = false;
     const whitelist = [
         'https://www.lorenzo-viganego.com', 
