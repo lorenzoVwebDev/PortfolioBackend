@@ -16,4 +16,4 @@ const corsOptions = {
     optionsSuccessStatus: 200
 }
 //hello
-module.exports = { corsOptions };
+module.exports = corsOptions;
