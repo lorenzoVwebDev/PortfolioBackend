@@ -32,9 +32,9 @@ connectDB();
 app.use(logger);  */
 
 // Cross Origin Resource Sharing
-app.use((req, res) => {
+/* app.use((req, res) => {
     console.log(req.origin)
-})
+}) */
 app.use(cors(corsOptions));
 
 
