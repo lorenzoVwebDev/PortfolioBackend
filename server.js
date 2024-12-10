@@ -33,6 +33,10 @@ app.use(logger);  */
 /* app.use((req, res) => {
     console.log(req.origin)
 }) */
+app.use((req,res,next)=> {
+    console.log(req.ip)
+    next();
+})
 app.use(cors(corsOptions));
 
 
