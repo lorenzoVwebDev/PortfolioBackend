@@ -38,7 +38,7 @@ app.use((req,res,next)=> {
     frontend = false;
     const whitelist = [
         'https://www.lorenzo-viganego.com', 
-        'https://lorenzo-viganego.com', 'http://example.com', 'http://192.168.1.101', 'http://192.168.1.1', 'http://151.27.29.178' 
+        'https://lorenzo-viganego.com', 'http://example.com', 'http://192.168.1.101', 'http://192.168.1.1'/* , 'http://151.27.29.178'  */
     ];
 
     for(I=0;I<=whitelist.length-1;I++) {
