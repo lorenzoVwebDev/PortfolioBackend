@@ -4,7 +4,7 @@ const fs = require('fs');
 const app = express();
 const path = require('path');
 const cors = require('cors');
-const {checkIp, corsOptions } = require('./config/corsOptions.js');
+const corsOptions = require('./config/corsOptions.js');
 const { logger } = require('./middleware/logEvents');
 const mongoose = require('mongoose');
 //utils
@@ -32,11 +32,6 @@ app.use(logger);  */
 /* app.use((req, res) => {
     console.log(req.origin)
 }) */
-app.use((req,res,next)=> {
-    const forwarded = req.headers['x-forwarded-for'];
-    checkIp(forwarded);
-    next();
-})
 
 app.use(cors(corsOptions));
 
