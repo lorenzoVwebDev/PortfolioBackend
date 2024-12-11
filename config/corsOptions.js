@@ -7,7 +7,6 @@ let frontend = false;
 
 function checkIp(ip) {
     const cleanIp = ip.replace("::ffff:", "");
-	console.log(cleanIp)  
     if(whitelist.some((url) => url.includes(cleanIp))) {
         frontend = true;
     }
