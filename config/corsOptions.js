@@ -28,4 +28,4 @@ corsOptions = {
 
 
 //hello
-module.exports =  { checkIp, corsOptions};
+module.exports =  corsOptions;
