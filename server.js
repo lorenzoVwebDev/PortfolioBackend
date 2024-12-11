@@ -33,9 +33,14 @@ app.use(logger);  */
     console.log(req.origin)
 }) */
 app.use((req,res,next)=> {
-    const forwarded = req.headers['x-forwarded-for'];	
-    const origin = req.headers['origin'];
-    console.log(origin);	
+    const forwarded = req.headers['x-forwarded-for'];
+    const origin = req.get('Origin')	
+    const headers = req.headers;
+    console.log(
+    {
+      headers
+	}
+    );
     checkIp(forwarded);
     next();
 })

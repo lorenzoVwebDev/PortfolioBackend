@@ -14,7 +14,6 @@ function checkIp(ip) {
 
 corsOptions = {
     origin: (origin, callback) => {
-        console.log(frontend);
         if (frontend) {
             callback(null, true)
             frontend=false
