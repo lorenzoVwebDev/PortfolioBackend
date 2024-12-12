@@ -1,6 +1,6 @@
 const whitelist = [
     'https://www.lorenzo-viganego.com', 
-    'https://lorenzo-viganego.com'
+    'https://lorenzo-viganego.com', 'http://192.168.1.101', 'https://192.168.1.101'
 ];
 
 let frontend = false;
@@ -29,3 +29,4 @@ corsOptions = {
 
 //hello
 module.exports =  corsOptions;
+
