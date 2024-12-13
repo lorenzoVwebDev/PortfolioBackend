@@ -33,7 +33,7 @@ app.use(logger);  */
     console.log(req.origin)
 }) */
 
-app.use(cors());
+app.use(cors(corsOptions));
 
 
 
