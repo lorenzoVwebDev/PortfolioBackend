@@ -15,7 +15,7 @@ let frontend = false;
 corsOptions = {
     origin: (origin, callback) => {
         console.log(origin)
-        if (whitelist.indexOf(origin) != -1) {
+        if (whitelist.indexOf(origin) != -1 || !origin) {
             callback(null, true)
 /*             frontend=false */
         } else {
