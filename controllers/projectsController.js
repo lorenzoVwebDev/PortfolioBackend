@@ -21,5 +21,18 @@ const getTictactoeJs = (req, res) => {
 const getTictactoeCss = (req, res) => {
   res.sendFile(path.join(__dirname, '../', 'projects', 'tic-tac-toe', 'tic-tac-toe.css'))
 }
+//rock-paper-scissors
+const getRockpaperscissorsHtml = (req, res) => {
+  res.header('project-type', 'including-images');
+  res.sendFile(path.join(__dirname, '../', 'projects', 'rock-paper-scissor', 'index.html'));
+}
 
-module.exports = {getCalculatorHtml, getCalculatorJs, getCalculatorCss, getTictactoeHtml, getTictactoeJs, getTictactoeCss}
+const getRockpaperscissorsJs = (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'projects', 'rock-paper-scissor', 'rock-paper-scissor.js'))
+}
+
+const getRockpaperscissorsCss = (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'projects', 'rock-paper-scissor', 'rock-paper-scissor.css'))
+}
+
+module.exports = {getCalculatorHtml, getCalculatorJs, getCalculatorCss, getTictactoeHtml, getTictactoeJs, getTictactoeCss, getRockpaperscissorsHtml, getRockpaperscissorsJs, getRockpaperscissorsCss}

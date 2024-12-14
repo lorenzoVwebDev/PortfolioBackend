@@ -54,11 +54,34 @@
     });
     
     function playGame(playerMove) {
-      const computerMove = pickComputerMove(); 
+      switch (playerMove) {
+        case 'rock':
+          playerMove = rockImageURL;
+          break;
+        case 'paper':
+          playerMove = paperImageURL;
+          break;
+        case 'scissor':
+          playerMove = scissorsImageURL;
+          break;
+      } 
+
+      let computerMove = pickComputerMove(); 
+      switch (computerMove) {
+        case 'rock':
+          computerMove = rockImageURL;
+          break;
+        case 'paper':
+          computerMove = paperImageURL;
+          break;
+        case 'scissor':
+          computerMove = scissorsImageURL;
+          break;
+      } 
 
       const movesElement = document.body.querySelector('.js-moves');
 
-      movesElement.innerHTML = `You<img src="https://lorenzodevback.glitch.me/projects/${playerMove}image" class="move-icon"><img src="https://lorenzodevback.glitch.me/projects/${computerMove}image" class="move-icon">computer`
+      movesElement.innerHTML = `You<img src="${playerMove}" class="move-icon"><img src=${computerMove} class="move-icon">computer`
 
       /*updateMovesElement(playerMove, computerMove);*/
 
@@ -66,7 +89,7 @@
 
         if (computerMove === playerMove) {
           result.innerHTML = 'tie';
-        } else if ((playerMove === 'rock' && computerMove === 'scissor')||(playerMove === 'paper' && computerMove === 'rock')||(playerMove === 'scissor' && computerMove === 'paper')) {
+        } else if ((playerMove === rockImageURL && computerMove === scissorsImageURL)||(playerMove === scissorsImageURL && computerMove === rockImageURL)||(playerMove === scissorsImageURL && computerMove === paperImageURL)) {
           result.innerHTML = 'you win'
         } else {
           result.innerHTML = 'you lose'
