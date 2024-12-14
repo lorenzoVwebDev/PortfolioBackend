@@ -34,5 +34,17 @@ const getRockpaperscissorsJs = (req, res) => {
 const getRockpaperscissorsCss = (req, res) => {
   res.sendFile(path.join(__dirname, '../', 'projects', 'rock-paper-scissor', 'rock-paper-scissor.css'))
 }
+//todo list
+const getTodoListHtml = (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'projects', 'ToDoList', 'index.html'));
+}
 
-module.exports = {getCalculatorHtml, getCalculatorJs, getCalculatorCss, getTictactoeHtml, getTictactoeJs, getTictactoeCss, getRockpaperscissorsHtml, getRockpaperscissorsJs, getRockpaperscissorsCss}
+const getTodoListJs = (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'projects', 'ToDoList', 'static', 'js', 'main.70d39762.js'));
+}
+
+const getTodoListCss = (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'projects', 'ToDoList', 'static', 'css', 'main.5902730d.css'));
+}
+
+module.exports = {getCalculatorHtml, getCalculatorJs, getCalculatorCss, getTictactoeHtml, getTictactoeJs, getTictactoeCss, getRockpaperscissorsHtml, getRockpaperscissorsJs, getRockpaperscissorsCss, getTodoListHtml, getTodoListJs, getTodoListCss}
