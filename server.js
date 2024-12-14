@@ -51,7 +51,7 @@ app.use('/', express.static(path.join(__dirname, 'public')));
 app.use('/projects/sendcalculator', require('./routes/projects/calculator/calculator.js'))
 app.use('/projects/tictactoe/', require('./routes/projects/tictactoe/tictactoe.js'));
 app.use('/projects/rockpaperscissor/',  require('./routes/projects/rockPaperScissors/rockPaperScissors.js'));
-app.use('/projects/todolist/', express.static(path.join(__dirname, 'projects', 'ToDoList')));
+app.use('/projects/todolist/', require('./routes/projects/todolist/todolist.js'));
 //projects middlware
 
 
