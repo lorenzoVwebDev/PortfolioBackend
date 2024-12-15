@@ -1,7 +1,7 @@
 //IMPORTANT: add http://127.0.0.1 to the white list to develop with live server
 const whitelist = [
     'https://www.lorenzo-viganego.com', 
-    'https://lorenzo-viganego.com', 'http://192.168.1.101', 'https://192.168.1.101', 'http://127.0.0.1'
+    'https://lorenzo-viganego.com', 'http://192.168.1.101', 'https://192.168.1.101'
 ];
 
 let frontend = false;
