@@ -7,7 +7,7 @@ This is my personal website's backend side. I am using it mainly as file server 
 - CORS policies improved to accept request exclusively from the frontend.
 - [Improved with mongo database to store form data as well as other types](https://github.com/lorenzoVwebDev/PortfolioBackend/blob/main/controllers/employeesController.js)
 ---
-[Projects](https://img.shields.io/badge/projects-my%20backend's%20projects-green
+![Projects](https://img.shields.io/badge/projects-my%20backend's%20projects-green
 )
 
 - [Calculator: A useful calculator with a fancy CSS appearance.](https://github.com/lorenzoVwebDev/PortfolioBackend/tree/main/projects/Calculator)
