@@ -6,7 +6,6 @@ const contactsMongo = require("../model/contactsmongo");
 const addNewContacts = async (req, res) => {
   /*     console.log(req.body) */
   const newContacts = req.body;
-  console.log(newContacts);
   if (!newContacts.name || !newContacts.email) {
     return res.status(400).json({ message: "Name and email are requested!" });
   }
