@@ -1,6 +1,6 @@
 # [Personal Lorenzo Viganego's website (Backend)](https://www.lorenzo-viganego.com/)
 This is my personal website's backend side. I am using it mainly as file server and a form data gatherer for my own website. I have been developing it since July 2024.  
-![Features](https://img.shields.io/badge/Features-my%20website's%20features-green?style=flat-square
+![Features](https://img.shields.io/badge/Features-my%20backend's%20features-green
 )
 
 - [MVC enanched to better manage API's routes](https://github.com/lorenzoVwebDev/PortfolioBackend/tree/main/routes).
