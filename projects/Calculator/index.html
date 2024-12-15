@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<!--   const backEndUrl = 'https://backend.lorenzo-viganego.com/';
+const backEndUrlNoProxy = 'http://172.232.217.98:3000/';
+const localHost = 'http://localhost:3000/';
+const awardSpaceUrl = 'http://lorenzovdev.atwebpages.com/'; -->
+  <head>
+    <title>Calculator Final Design</title>
+    <style class="css"></style>
+  </head>
+  <body>
+    <!-- Create an element to display the calculation. -->
+    <p class="js-calculation calculation"></p>
+
+    <p>
+      <button class="button numbers" onclick="
+        updateCalculation('1');
+      ">1</button>
+
+      <button class="button numbers" onclick="
+        updateCalculation('2');
+      ">2</button>
+
+      <button class="button numbers" onclick="
+        updateCalculation('3');
+      ">3</button>
+
+      <button class="button operators" onclick="
+        updateCalculation(' + ');
+      ">+</button>
+    </p>
+
+    <p>
+      <button class="button numbers" onclick="
+        updateCalculation('4');
+      ">4</button>
+
+      <button class="button numbers" onclick="
+        updateCalculation('5');
+      ">5</button>
+
+      <button class="button numbers" onclick="
+        updateCalculation('6');
+      ">6</button>
+
+      <button class="button operators" onclick="
+        updateCalculation(' - ');
+      ">-</button>
+    </p>
+
+    <p>
+      <button class="button numbers" onclick="
+        updateCalculation('7');
+      ">7</button>
+
+      <button class="button numbers" onclick="
+        updateCalculation('8');
+      ">8</button>
+
+      <button class="button numbers" onclick="
+        updateCalculation('9');
+      ">9</button>
+
+      <button class="button operators" onclick="
+        updateCalculation(' * ');
+      ">*</button>
+    </p>
+
+    <p>
+      <button class="button numbers" onclick="
+        updateCalculation('0');
+      ">0</button>
+
+      <button class="button numbers" onclick="
+        updateCalculation('.');
+      ">.</button>
+
+      <button class="button numbers" onclick="
+        // Note: eval() takes a string and runs it as code.
+        // Avoid using eval() in real world projects since
+        // it can potentially be given harmful code to run.
+        // Only use eval() for learning purposes.
+        calculation = eval(calculation);
+
+        // Display the calculation on the page
+        // instead of console.log
+        displayCalculation();
+
+        localStorage.setItem('calculation', calculation);
+      ">=</button>
+
+      <button class="button operators" onclick="
+        updateCalculation(' / ');
+      ">/</button>
+    </p>
+
+    <p>
+      <button class="button clear" onclick="
+        calculation = '';
+
+        // Display the calculation on the page
+        // instead of console.log
+        displayCalculation();
+
+        localStorage.setItem('calculation', calculation);
+      ">Clear</button>
+    </p>
+
+    <script class="js"></script>
+      
+    </script>
+  </body>
+</html>
