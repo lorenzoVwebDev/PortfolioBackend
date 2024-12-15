@@ -23,8 +23,8 @@ corsOptions = {
 /*             frontend=false */
         }
     },
-    allowedHeaders: ['project-type'],
-    exposedHeaders: ['project-type'],
+    allowedHeaders: ['project-type','Content-type'],
+    exposedHeaders: ['project-type', 'Content-type'],
     credentials: true,
     maxAge: 10000,
     optionsSuccessStatus: 200

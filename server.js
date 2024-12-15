@@ -37,12 +37,12 @@ app.use(cors(corsOptions));
 
 
 
-
+app.use(express.json());
 // built-in middleware to handle urlencoded form data
 app.use(express.urlencoded({ extended: false }));
 
 // built-in middleware for json 
-app.use(express.json());
+
 
 // serve static files
 app.use('/', express.static(path.join(__dirname, 'public')));
