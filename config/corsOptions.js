@@ -1,7 +1,7 @@
 //IMPORTANT: add http://127.0.0.1 to the white list to develop with live server
 const whitelist = [
     'https://www.lorenzo-viganego.com', 
-    'https://lorenzo-viganego.com', 'http://192.168.1.101', 'https://192.168.1.101'
+    'https://lorenzo-viganego.com', 'http://192.168.1.101', 'https://192.168.1.101'/* , 'http://127.0.0.1:5501' */
 ];
 
 let frontend = false;
@@ -16,7 +16,7 @@ let frontend = false;
 corsOptions = {
     origin: (origin, callback) => {
         console.log(origin)
-        if (whitelist.indexOf(origin) != -1) {
+        if (whitelist.indexOf(origin) != -1 || !origin) {
             callback(null, true)
 /*             frontend=false */
         } else {
