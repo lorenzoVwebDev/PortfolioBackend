@@ -46,5 +46,18 @@ const getTodoListJs = (req, res) => {
 const getTodoListCss = (req, res) => {
   res.sendFile(path.join(__dirname, '../', 'projects', 'ToDoList', 'static', 'css', 'main.5902730d.css'));
 }
+//login page
 
-module.exports = {getCalculatorHtml, getCalculatorJs, getCalculatorCss, getTictactoeHtml, getTictactoeJs, getTictactoeCss, getRockpaperscissorsHtml, getRockpaperscissorsJs, getRockpaperscissorsCss, getTodoListHtml, getTodoListJs, getTodoListCss}
+const getLoginpageHtml = (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'projects', 'loginPage', 'index.html'))
+}
+
+const getLoginpageJs = (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'projects', 'loginPage', 'static','js','488.cc376d4e.chunk.js'))
+}
+
+const getLoginpageCss = (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'projects', 'loginPage', 'static','css','main.f855e6bc.css'))
+}
+
+module.exports = {getCalculatorHtml, getCalculatorJs, getCalculatorCss, getTictactoeHtml, getTictactoeJs, getTictactoeCss, getRockpaperscissorsHtml, getRockpaperscissorsJs, getRockpaperscissorsCss, getTodoListHtml, getTodoListJs, getTodoListCss, getLoginpageHtml, getLoginpageJs, getLoginpageCss}

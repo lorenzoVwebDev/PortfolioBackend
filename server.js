@@ -52,11 +52,12 @@ app.use('/projects/sendcalculator', require('./routes/projects/calculator/calcul
 app.use('/projects/tictactoe/', require('./routes/projects/tictactoe/tictactoe.js'));
 app.use('/projects/rockpaperscissor/',  require('./routes/projects/rockPaperScissors/rockPaperScissors.js'));
 app.use('/projects/todolist/', require('./routes/projects/todolist/todolist.js'));
+app.use('/projects/loginpage/', require('./routes/projects/loginpage/loginpage.js'));
 //projects middlware
 
 
 // routes
-
+app.use('/dummylogin', require(path.join(__dirname, 'routes', 'api', 'dummylogin.js')))
 app.use('/register', require('./routes/register'));
 app.use('/auth', require('./routes/auth'));
 app.use('/contacts', require('./routes/api/contacts'));
