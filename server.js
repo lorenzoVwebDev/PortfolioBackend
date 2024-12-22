@@ -53,6 +53,7 @@ app.use('/projects/tictactoe/', require('./routes/projects/tictactoe/tictactoe.j
 app.use('/projects/rockpaperscissor/',  require('./routes/projects/rockPaperScissors/rockPaperScissors.js'));
 app.use('/projects/todolist/', require('./routes/projects/todolist/todolist.js'));
 app.use('/projects/loginpage/', require('./routes/projects/loginpage/loginpage.js'));
+app.use('/projects/animalcards/', require('./routes/projects/animalcards/animalcards.js'));
 //projects middlware
 
 
