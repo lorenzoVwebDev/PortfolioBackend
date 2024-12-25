@@ -66,11 +66,11 @@ const getAnimalcardsHtml = (req, res) => {
 }
 
 const getAnimalcardsJs = (req, res) => {
-  res.sendFile(path.join(__dirname, '../', 'projects', 'animalCards', 'static','js','main.d9a44143.js'))
+  res.sendFile(path.join(__dirname, '../', 'projects', 'animalCards', 'static','js','main.03f65a57.js'))
 }
 
 const getAnimalcardsCss = (req, res) => {
-  res.sendFile(path.join(__dirname, '../', 'projects', 'animalCards', 'static','css','main.f855e6bc.css'))
+  res.sendFile(path.join(__dirname, '../', 'projects', 'animalCards', 'static','css','main.886cf89b.css'))
 }
 
 module.exports = {getCalculatorHtml, getCalculatorJs, getCalculatorCss, getTictactoeHtml, getTictactoeJs, getTictactoeCss, getRockpaperscissorsHtml, getRockpaperscissorsJs, getRockpaperscissorsCss, getTodoListHtml, getTodoListJs, getTodoListCss, getLoginpageHtml, getLoginpageJs, getLoginpageCss, getAnimalcardsHtml, getAnimalcardsJs, getAnimalcardsCss}
