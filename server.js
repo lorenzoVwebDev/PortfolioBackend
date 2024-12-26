@@ -1,4 +1,5 @@
 require('dotenv').config();
+const bcrypt = require('bcrypt')
 const express = require('express');
 const fs = require('fs');
 const app = express();
@@ -34,7 +35,6 @@ app.use(logger);  */
 }) */
 
 app.use(cors(corsOptions));
-
 
 
 app.use(express.json());
