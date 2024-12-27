@@ -1,4 +1,10 @@
 [{
   "username": "lorenzo",
   "password": "$2b$10$.YUZ/M.ZMV0UgODwQ30q4.zMd8uLboQxatH2VojH0gk72WK7BrwHa"
+}, {
+  "username": "francesco",
+  "password": "$2b$10$VD/.BQ0jyw1JeAMrPus3i.9XB.Uqb5ef08QGysPIDi2nfzMeFQd7u"
+}, {
+  "username": "matteo",
+  "password": "$2b$10$jyAgC6Nva/vIGAzppCT94OaayPKTHJ/ok7G1JimaGE036yoMGF85i"
 }]
