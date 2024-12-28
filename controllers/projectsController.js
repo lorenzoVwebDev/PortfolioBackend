@@ -40,11 +40,11 @@ const getTodoListHtml = (req, res) => {
 }
 
 const getTodoListJs = (req, res) => {
-  res.sendFile(path.join(__dirname, '../', 'projects', 'ToDoList', 'static', 'js', 'main.70d39762.js'));
+  res.sendFile(path.join(__dirname, '../', 'projects', 'ToDoList', 'static', 'js', 'main.0a9ec181.js'));
 }
 
 const getTodoListCss = (req, res) => {
-  res.sendFile(path.join(__dirname, '../', 'projects', 'ToDoList', 'static', 'css', 'main.5902730d.css'));
+  res.sendFile(path.join(__dirname, '../', 'projects', 'ToDoList', 'static', 'css', 'main.4d8ddc3c.css'));
 }
 //login page
 
