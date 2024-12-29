@@ -70,7 +70,7 @@ const getAnimalcardsJs = (req, res) => {
 }
 
 const getAnimalcardsCss = (req, res) => {
-  res.sendFile(path.join(__dirname, '../', 'projects', 'animalCards', 'static','css','main.886cf89b.css'))
+  res.sendFile(path.join(__dirname, '../', 'projects', 'animalCards', 'static','css','main.8f866fb1.css'))
 }
 
 module.exports = {getCalculatorHtml, getCalculatorJs, getCalculatorCss, getTictactoeHtml, getTictactoeJs, getTictactoeCss, getRockpaperscissorsHtml, getRockpaperscissorsJs, getRockpaperscissorsCss, getTodoListHtml, getTodoListJs, getTodoListCss, getLoginpageHtml, getLoginpageJs, getLoginpageCss, getAnimalcardsHtml, getAnimalcardsJs, getAnimalcardsCss}
