@@ -53,11 +53,11 @@ const getLoginpageHtml = (req, res) => {
 }
 
 const getLoginpageJs = (req, res) => {
-  res.sendFile(path.join(__dirname, '../', 'projects', 'loginPage', 'static','js','main.d22a630f.js'))
+  res.sendFile(path.join(__dirname, '../', 'projects', 'loginPage', 'static','js','main.87c50b7b.js'))
 }
 
 const getLoginpageCss = (req, res) => {
-  res.sendFile(path.join(__dirname, '../', 'projects', 'loginPage', 'static','css','main.85c92d1b.css'))
+  res.sendFile(path.join(__dirname, '../', 'projects', 'loginPage', 'static','css','main.4e0c6ef2.css'))
 }
 //animal cards
 
