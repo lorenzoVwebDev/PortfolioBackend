@@ -72,5 +72,16 @@ const getAnimalcardsJs = (req, res) => {
 const getAnimalcardsCss = (req, res) => {
   res.sendFile(path.join(__dirname, '../', 'projects', 'animalCards', 'static','css','main.8f866fb1.css'))
 }
+//product page
+const getProductpageHtml = (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'projects', 'productPage', 'index.html'))
+}
 
-module.exports = {getCalculatorHtml, getCalculatorJs, getCalculatorCss, getTictactoeHtml, getTictactoeJs, getTictactoeCss, getRockpaperscissorsHtml, getRockpaperscissorsJs, getRockpaperscissorsCss, getTodoListHtml, getTodoListJs, getTodoListCss, getLoginpageHtml, getLoginpageJs, getLoginpageCss, getAnimalcardsHtml, getAnimalcardsJs, getAnimalcardsCss}
+const getProductpageJs = (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'projects', 'productPage', 'static', 'js', 'main.3b52b789.js'))
+}
+
+const getProductpageCss = (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'projects', 'productPage', 'static', 'css', 'main.e7075006.css'))
+}
+module.exports = {getCalculatorHtml, getCalculatorJs, getCalculatorCss, getTictactoeHtml, getTictactoeJs, getTictactoeCss, getRockpaperscissorsHtml, getRockpaperscissorsJs, getRockpaperscissorsCss, getTodoListHtml, getTodoListJs, getTodoListCss, getLoginpageHtml, getLoginpageJs, getLoginpageCss, getAnimalcardsHtml, getAnimalcardsJs, getAnimalcardsCss, getProductpageHtml, getProductpageJs, getProductpageCss}

@@ -54,6 +54,7 @@ app.use('/projects/rockpaperscissor/',  require('./routes/projects/rockPaperScis
 app.use('/projects/todolist/', require('./routes/projects/todolist/todolist.js'));
 app.use('/projects/loginpage/', require('./routes/projects/loginpage/loginpage.js'));
 app.use('/projects/animalcards/', require('./routes/projects/animalcards/animalcards.js'));
+app.use('/projects/productpage/', require('./routes/projects/productpage/productpage.js'));
 //projects middlware
 
 
