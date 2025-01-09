@@ -84,4 +84,17 @@ const getProductpageJs = (req, res) => {
 const getProductpageCss = (req, res) => {
   res.sendFile(path.join(__dirname, '../', 'projects', 'productPage', 'static', 'css', 'main.e7075006.css'))
 }
-module.exports = {getCalculatorHtml, getCalculatorJs, getCalculatorCss, getTictactoeHtml, getTictactoeJs, getTictactoeCss, getRockpaperscissorsHtml, getRockpaperscissorsJs, getRockpaperscissorsCss, getTodoListHtml, getTodoListJs, getTodoListCss, getLoginpageHtml, getLoginpageJs, getLoginpageCss, getAnimalcardsHtml, getAnimalcardsJs, getAnimalcardsCss, getProductpageHtml, getProductpageJs, getProductpageCss}
+//salad maker
+const getSaladmakerHtml = (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'projects', 'saladMaker', 'index.html'))
+}
+
+const getSaladmakerJs = (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'projects', 'saladMaker', 'static', 'js', 'main.243ceff8.js'))
+}
+
+const getSaladmakerCss = (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'projects', 'saladMaker', 'static', 'css', 'main.691205b0.css'))
+}
+
+module.exports = {getCalculatorHtml, getCalculatorJs, getCalculatorCss, getTictactoeHtml, getTictactoeJs, getTictactoeCss, getRockpaperscissorsHtml, getRockpaperscissorsJs, getRockpaperscissorsCss, getTodoListHtml, getTodoListJs, getTodoListCss, getLoginpageHtml, getLoginpageJs, getLoginpageCss, getAnimalcardsHtml, getAnimalcardsJs, getAnimalcardsCss, getProductpageHtml, getProductpageJs, getProductpageCss, getSaladmakerHtml, getSaladmakerJs, getSaladmakerCss}

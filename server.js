@@ -55,11 +55,13 @@ app.use('/projects/todolist/', require('./routes/projects/todolist/todolist.js')
 app.use('/projects/loginpage/', require('./routes/projects/loginpage/loginpage.js'));
 app.use('/projects/animalcards/', require('./routes/projects/animalcards/animalcards.js'));
 app.use('/projects/productpage/', require('./routes/projects/productpage/productpage.js'));
+app.use('/projects/saladmaker/', require('./routes/projects/saladmaker/saladmaker.js'));
 //projects middlware
 
 
 // routes
 app.use('/dummylogin', require(path.join(__dirname, 'routes', 'api', 'dummylogin.js')))
+app.use('/saladimages', require(path.join(__dirname, 'routes', 'api', 'saladimages.js')))
 app.use('/register', require('./routes/register'));
 app.use('/auth', require('./routes/auth'));
 app.use('/contacts', require('./routes/api/contacts'));
