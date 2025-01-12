@@ -56,6 +56,7 @@ app.use('/projects/loginpage/', require('./routes/projects/loginpage/loginpage.j
 app.use('/projects/animalcards/', require('./routes/projects/animalcards/animalcards.js'));
 app.use('/projects/productpage/', require('./routes/projects/productpage/productpage.js'));
 app.use('/projects/saladmaker/', require('./routes/projects/saladmaker/saladmaker.js'));
+app.use('/projects/textanalyzer/', require('./routes/projects/textanalyzer/textanalyzer.js'));
 //projects middlware
 
 
