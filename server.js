@@ -59,7 +59,7 @@ app.use('/projects/saladmaker/', require('./routes/projects/saladmaker/saladmake
 app.use('/projects/textanalyzer/', require('./routes/projects/textanalyzer/textanalyzer.js'));
 //projects middlware
 
-
+//
 // routes
 app.use('/dummylogin', require(path.join(__dirname, 'routes', 'api', 'dummylogin.js')))
 app.use('/saladimages', require(path.join(__dirname, 'routes', 'api', 'saladimages.js')))
