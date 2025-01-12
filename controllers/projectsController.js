@@ -96,5 +96,17 @@ const getSaladmakerJs = (req, res) => {
 const getSaladmakerCss = (req, res) => {
   res.sendFile(path.join(__dirname, '../', 'projects', 'saladMaker', 'static', 'css', 'main.691205b0.css'))
 }
+//text analyzer
+const getTextanalyzerHtml = (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'projects', 'textanalyzer', 'index.html'))
+}
 
-module.exports = {getCalculatorHtml, getCalculatorJs, getCalculatorCss, getTictactoeHtml, getTictactoeJs, getTictactoeCss, getRockpaperscissorsHtml, getRockpaperscissorsJs, getRockpaperscissorsCss, getTodoListHtml, getTodoListJs, getTodoListCss, getLoginpageHtml, getLoginpageJs, getLoginpageCss, getAnimalcardsHtml, getAnimalcardsJs, getAnimalcardsCss, getProductpageHtml, getProductpageJs, getProductpageCss, getSaladmakerHtml, getSaladmakerJs, getSaladmakerCss}
+const getTextanalyzerJs = (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'projects', 'textanalyzer', 'static', 'js', 'main.92a2f2cf.js'))
+}
+
+const getTextanalyzerCss = (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'projects', 'textanalyzer', 'static', 'css', 'main.bf4b0317.css'))
+}
+
+module.exports = {getCalculatorHtml, getCalculatorJs, getCalculatorCss, getTictactoeHtml, getTictactoeJs, getTictactoeCss, getRockpaperscissorsHtml, getRockpaperscissorsJs, getRockpaperscissorsCss, getTodoListHtml, getTodoListJs, getTodoListCss, getLoginpageHtml, getLoginpageJs, getLoginpageCss, getAnimalcardsHtml, getAnimalcardsJs, getAnimalcardsCss, getProductpageHtml, getProductpageJs, getProductpageCss, getSaladmakerHtml, getSaladmakerJs, getSaladmakerCss, getTextanalyzerHtml, getTextanalyzerJs, getTextanalyzerCss}
