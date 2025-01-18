@@ -53,7 +53,7 @@ const getLoginpageHtml = (req, res) => {
 }
 
 const getLoginpageJs = (req, res) => {
-  res.sendFile(path.join(__dirname, '../', 'projects', 'loginPage', 'static','js','main.87c50b7b.js'))
+  res.sendFile(path.join(__dirname, '../', 'projects', 'loginPage', 'static','js','main.40b58238.js'))
 }
 
 const getLoginpageCss = (req, res) => {
