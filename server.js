@@ -58,6 +58,7 @@ app.use('/projects/productpage/', require('./routes/projects/productpage/product
 app.use('/projects/saladmaker/', require('./routes/projects/saladmaker/saladmaker.js'));
 app.use('/projects/textanalyzer/', require('./routes/projects/textanalyzer/textanalyzer.js'));
 app.use('/projects/filecreator/', require('./routes/projects/filecreator/filecreator.js'));
+app.use('/projects/reduxbirds/', require('./routes/projects/reduxbirds/reduxbirds.js'));
 //projects middlware
 
 //

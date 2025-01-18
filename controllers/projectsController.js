@@ -121,4 +121,18 @@ const getFilecreatorCss = (req, res) => {
   res.sendFile(path.join(__dirname, '../', 'projects', 'filecreator', 'static', 'css', 'main.3b402b19.css'))
 }
 
-module.exports = {getCalculatorHtml, getCalculatorJs, getCalculatorCss, getTictactoeHtml, getTictactoeJs, getTictactoeCss, getRockpaperscissorsHtml, getRockpaperscissorsJs, getRockpaperscissorsCss, getTodoListHtml, getTodoListJs, getTodoListCss, getLoginpageHtml, getLoginpageJs, getLoginpageCss, getAnimalcardsHtml, getAnimalcardsJs, getAnimalcardsCss, getProductpageHtml, getProductpageJs, getProductpageCss, getSaladmakerHtml, getSaladmakerJs, getSaladmakerCss, getTextanalyzerHtml, getTextanalyzerJs, getTextanalyzerCss, getFilecreatorHtml, getFilecreatorJs, getFilecreatorCss}
+//redux birds
+const getReduxbirdsHtml = (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'projects', 'reduxbirds', 'index.html'))
+}
+
+const getReduxbirdsJs = (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'projects', 'reduxbirds', 'static', 'js', 'main.8c7d412b.js'))
+}
+
+const getReduxbirdsCss = (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'projects', 'reduxbirds', 'static', 'css', 'main.a2d3a1eb.css'))
+}
+
+
+module.exports = {getCalculatorHtml, getCalculatorJs, getCalculatorCss, getTictactoeHtml, getTictactoeJs, getTictactoeCss, getRockpaperscissorsHtml, getRockpaperscissorsJs, getRockpaperscissorsCss, getTodoListHtml, getTodoListJs, getTodoListCss, getLoginpageHtml, getLoginpageJs, getLoginpageCss, getAnimalcardsHtml, getAnimalcardsJs, getAnimalcardsCss, getProductpageHtml, getProductpageJs, getProductpageCss, getSaladmakerHtml, getSaladmakerJs, getSaladmakerCss, getTextanalyzerHtml, getTextanalyzerJs, getTextanalyzerCss, getFilecreatorHtml, getFilecreatorJs, getFilecreatorCss, getReduxbirdsHtml, getReduxbirdsJs, getReduxbirdsCss}
