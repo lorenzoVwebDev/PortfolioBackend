@@ -9,7 +9,7 @@ const sendArray = (req, res) => {
   string += '\n';
   string += `${ySize} ${xSize}`;
   string += '\n\n';
-  console.log(array)
+  
   for (const arrays of array) {
     for (let values of arrays) {
       if (values === 0) {

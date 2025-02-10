@@ -34,7 +34,7 @@ app.use(logger);  */
     console.log(req.origin)
 }) */
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 
 app.use(express.json());
