@@ -69,7 +69,8 @@ app.use('/register', require('./routes/register'));
 app.use('/auth', require('./routes/auth'));
 app.use('/contacts', require('./routes/api/contacts'));
 app.use('/templatesresume', require('./routes/api/resumetemplates'))  
-app.use('/textarray', require('./routes/api/readfile.js'));  
+app.use('/textarray', require('./routes/api/readfile.js'));
+app.use('/angulartest', require('./routes/api/angulartest.route.js'));  
   
 app.all('*', (req, res) => {
     res.status(404);
