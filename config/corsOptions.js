@@ -1,7 +1,7 @@
 //IMPORTANT: add http://127.0.0.1:5501 to the white list to develop with live server
 const whitelist = [
     'https://www.lorenzo-viganego.com', 
-    'https://lorenzo-viganego.com', 'https://saladmaker.lorenzo-viganego.com', 'https://www.saladmaker.lorenzo-viganego.com', 'https://gameoflife.lorenzo-viganego.com', 'https://www.gameoflife.lorenzo-viganego.com', 'https://todolist.lorenzo-viganego.com/', 'https://responsivemenu.lorenzo-viganego.com/', 'https://www.responsivemenu.lorenzo-viganego.com/' //192.168.1.101', 'https://192.168.1.101', 'http://127.0.0.1:5501'  */
+    'https://lorenzo-viganego.com', 'https://saladmaker.lorenzo-viganego.com', 'https://www.saladmaker.lorenzo-viganego.com', 'https://gameoflife.lorenzo-viganego.com', 'https://www.gameoflife.lorenzo-viganego.com', 'https://todolist.lorenzo-viganego.com/', 'https://responsivemenu.lorenzo-viganego.com', 'https://www.responsivemenu.lorenzo-viganego.com' //192.168.1.101', 'https://192.168.1.101', 'http://127.0.0.1:5501'  */
 ];
 
 let frontend = false;
